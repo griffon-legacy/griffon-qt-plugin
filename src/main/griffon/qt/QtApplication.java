@@ -21,7 +21,7 @@ import com.trolltech.qt.gui.QApplication;
 /**
  * @author Andres Almiray
  */
-class QtApplication extends AbstractQtGriffonApplication {
+public class QtApplication extends AbstractQtGriffonApplication {
     public QtApplication() {
         this(AbstractQtGriffonApplication.EMPTY_ARGS);
     }
