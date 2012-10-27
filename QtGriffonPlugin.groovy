@@ -41,7 +41,7 @@ Enables Qt as UI toolkit using [qt-jambi][1].
 Qt is the de facto standard C++ framework for high performance cross-platform software development.
 Qt Jambi is the Qt library made available to Java. It is an open source technology aimed at all desktop
 programmers wanting to write rich GUI clients using the Java language, while at the same time taking
-advantage of Qt’s power and efficiency.
+advantage of Qt's power and efficiency.
 
 Usage
 -----
@@ -106,8 +106,8 @@ This plugin provides custom `WindowManager` and `GriffonControllerActionManager`
 
 The following actions properties can be configured using the ActionManager's external configuration convention:
 
-{table}
 | *Key*             | *Default Value* |
+| ----------------- | --------------- |
 | autoRepeat        | false           |
 | checkable         | false           |
 | checked           | false           |
@@ -120,7 +120,6 @@ The following actions properties can be configured using the ActionManager's ext
 | toolTip           |                 |
 | visible           | true            |
 | whatsThis         |                 |
-{table}
 
 Basic property editors are supplied for the following classes
 
