@@ -35,7 +35,7 @@ import static griffon.util.GriffonExceptionHandler.sanitize;
  * @author Andres Almiray
  */
 public abstract class AbstractQtGriffonApplication extends AbstractGriffonApplication implements QtGriffonApplication,
-        StandaloneGriffonApplication {
+    StandaloneGriffonApplication {
     private final WindowManager windowManager;
     private WindowDisplayHandler windowDisplayHandler;
     private final WindowDisplayHandler defaultWindowDisplayHandler = new ConfigurableWindowDisplayHandler();

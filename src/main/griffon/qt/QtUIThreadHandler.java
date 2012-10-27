@@ -31,8 +31,8 @@ public class QtUIThreadHandler extends AbstractUIThreadHandler {
 
     public boolean isUIThread() {
         boolean isUIThread = QApplication.instance().thread() == Thread.currentThread();
-        if(LOG.isTraceEnabled()) {
-            LOG.trace("isUIThread? "+isUIThread);
+        if (LOG.isTraceEnabled()) {
+            LOG.trace("isUIThread? " + isUIThread);
         }
         return isUIThread;
     }

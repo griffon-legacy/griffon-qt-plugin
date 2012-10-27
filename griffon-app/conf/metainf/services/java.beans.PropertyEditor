@@ -1,0 +1,4 @@
+com.trolltech.qt.gui.QColor = griffon.qt.editors.QColorPropertyEditor
+com.trolltech.qt.gui.QIcon = griffon.qt.editors.QIconPropertyEditor
+com.trolltech.qt.gui.QImage = griffon.qt.editors.QImagePropertyEditor
+com.trolltech.qt.gui.QPixmap = griffon.qt.editors.QPixmapPropertyEditor

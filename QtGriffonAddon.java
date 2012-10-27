@@ -59,8 +59,8 @@ public class QtGriffonAddon extends AbstractGriffonAddon {
         // -- Layouts
         factories.put("hboxLayout", new QLayoutFactory(QHBoxLayout.class));
         factories.put("vboxLayout", new QLayoutFactory(QVBoxLayout.class));
-        factories.put("vboxLayout", new QLayoutFactory(QGridLayout.class));
-        factories.put("vboxLayout", new QLayoutFactory(QStackedLayout.class));
+        factories.put("gridLayout", new QLayoutFactory(QGridLayout.class));
+        factories.put("stackedLayout", new QLayoutFactory(QStackedLayout.class));
 
         // -- widgets
         factories.put("calendarWidget", new QWidgetFactory(QCalendarWidget.class));
@@ -76,9 +76,13 @@ public class QtGriffonAddon extends AbstractGriffonAddon {
         factories.put("stackedWidget", new QWidgetFactory(QStackedWidget.class));
         factories.put("toolBar", new QToolBarFactory());
         factories.put("icon", new QIconFactory());
+        factories.put("image", new QImageFactory());
+        factories.put("pixmap", new QPixmapFactory());
         factories.put("label", new TextWidgetFactory(QLabel.class));
         factories.put("lineEdit", new TextWidgetFactory(QLineEdit.class));
         factories.put("textEdit", new TextWidgetFactory(QTextEdit.class));
+        factories.put("menuBar", new QMenuBarFactory());
+        factories.put("menu", new QMenuFactory());
 
         // -- buttons
         factories.put("buttonGroup", new QButtonGroupFactory());

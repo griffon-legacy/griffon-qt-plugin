@@ -20,10 +20,10 @@ import griffon.core.GriffonApplication;
 
 /**
  * Defines an additional contract that all Qt based application should follow.
- * <p>
+ * <p/>
  * Windows in a Qt application should be handled by a {@code WindowManager}, which in turn requires a concrete implementation of the
  * {@code WindowDisplayHandler} to be available on the target application.
- * 
+ *
  * @author Andres Almiray
  * @see griffon.qt.WindowManager
  * @see griffon.qt.WindowDisplayHandler
@@ -31,37 +31,37 @@ import griffon.core.GriffonApplication;
 public interface QtGriffonApplication extends GriffonApplication {
     /**
      * Returns the {@code WindowManager} associated with this application.
-     * <p>
+     * <p/>
      * Every {@code QtGriffonApplication} must have a non-null instance.
-     * 
+     *
      * @return the current WindowManager instance.
      */
     WindowManager getWindowManager();
-    
+
     /**
      * Returns the {@code WindowDisplayHandler} defined for this application.
-     * <p>
+     * <p/>
      * An application implementation may opt for ignoring this property, in which case a {@code DefaultWindowDisplayHandler} should be used.
-     * 
+     *
      * @return the current WindowDisplayHandler instance, may return null.
      */
     WindowDisplayHandler getWindowDisplayHandler();
-    
+
     /**
      * Sets the {@code WindowDisplayHandler} to be used in conjunction with {@code WindowManager} to handle window showing/hiding.
-     * <p>
+     * <p/>
      * If set to null the application should revert to using an instance of {@code DefaultWindowDisplayHandler}.
-     * 
+     *
      * @param windowDisplayHandler the instance to use, may be null.
      */
     void setWindowDisplayHandler(WindowDisplayHandler windowDisplayHandler);
-    
+
     /**
      * Resolves the {@code WindowDisplayHandler} to be used with {@code WindowManager}.
-     * <p>
+     * <p/>
      * Should <b>NEVER</b> return null. If no custom {@code WindowDisplayHandler} has been defined for this application then this method
      * should return an instance of {@code DefaulWindowDisplayHandler}.
-     * 
+     *
      * @return a non-null WindowDisplayHandler instance.
      */
     WindowDisplayHandler resolveWindowDisplayHandler();

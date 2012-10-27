@@ -80,7 +80,7 @@ class QWidgetFactory extends QObjectFactory {
             parent.addAction child
         } else if (child instanceof QWidget) {
             if (parent instanceof QSplitter || parent instanceof QStatusBar
-                    || parent instanceof QStackedWidget || parent instanceof QToolBar) {
+                || parent instanceof QStackedWidget || parent instanceof QToolBar) {
                 parent.addWidget child
             } else {
                 QLayoutFactory.handleChildWidget(builder, parent.layout(), child)

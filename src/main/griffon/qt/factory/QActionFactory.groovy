@@ -30,6 +30,8 @@ class QActionFactory extends QObjectFactory {
     }
 
     Object newInstance(FactoryBuilderSupport builder, Object name, Object value, Map attributes) throws InstantiationException, IllegalAccessException {
+        if (value instanceof QAction) return value
+
         String text = ''
         QIcon icon = null
         QWidget parent = attributes.remove('parent')

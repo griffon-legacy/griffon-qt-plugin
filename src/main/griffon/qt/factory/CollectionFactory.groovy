@@ -27,8 +27,8 @@ class CollectionFactory extends AbstractFactory {
         } else {
             def item = attributes.entrySet().iterator().next();
             throw new MissingPropertyException(
-                    "The builder element '$name' is a collections element and accepts no attributes",
-                    item.key as String, item.value as Class);
+                "The builder element '$name' is a collections element and accepts no attributes",
+                item.key as String, item.value as Class);
         }
     }
 
